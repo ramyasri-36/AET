@@ -201,12 +201,10 @@ metadata:
   test_sequence: 1
 
 test_plan:
-  current_focus:
-    - "Students Page Functionality"
-  stuck_tasks:
-    - "Students Page Functionality"
-  test_all: false
-  test_priority: "stuck_first"
+  current_focus: []
+  stuck_tasks: []
+  test_all: true
+  test_priority: "completed"
 
 agent_communication:
     - agent: "testing"
