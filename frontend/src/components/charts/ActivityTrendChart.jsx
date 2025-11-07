@@ -44,8 +44,8 @@ export const ActivityTrendChart = ({ data }) => {
       {
         label: 'Average Activity Score',
         data: avgScores,
-        borderColor: 'hsl(214, 67%, 50%)',
-        backgroundColor: 'hsl(214, 67%, 50%, 0.1)',
+        borderColor: 'hsl(220, 60%, 25%)',
+        backgroundColor: 'hsl(220, 60%, 25%, 0.1)',
         fill: true,
         tension: 0.4,
         pointRadius: 4,
