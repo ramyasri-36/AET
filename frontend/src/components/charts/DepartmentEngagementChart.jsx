@@ -35,13 +35,13 @@ export const DepartmentEngagementChart = ({ data }) => {
       {
         label: 'Avg Activity Score',
         data: avgScores,
-        backgroundColor: 'hsl(214, 67%, 50%)',
+        backgroundColor: 'hsl(220, 60%, 25%)',
         borderRadius: 4,
       },
       {
         label: 'Avg GPA (scaled)',
         data: avgGPAs,
-        backgroundColor: 'hsl(145, 65%, 40%)',
+        backgroundColor: 'hsl(220, 60%, 35%)',
         borderRadius: 4,
       },
     ],
