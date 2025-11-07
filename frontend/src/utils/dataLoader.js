@@ -105,7 +105,17 @@ export const loadExcelData = async (fileUrl) => {
     });
 
     cachedData = processedData;
+    
+    // Log data statistics for debugging
+    const alertCounts = processedData.reduce((acc, s) => {
+      acc[s.alert_level] = (acc[s.alert_level] || 0) + 1;
+      return acc;
+    }, {});
+    
     console.log(`Successfully processed ${processedData.length} student records`);
+    console.log('Alert Distribution:', alertCounts);
+    console.log('Sample student:', processedData[0]);
+    
     return processedData;
   } catch (error) {
     console.error('Error loading Excel data:', error);
