@@ -95,10 +95,12 @@ export const loadExcelData = async (fileUrl) => {
     });
 
     cachedData = processedData;
+    console.log(`Successfully processed ${processedData.length} student records`);
     return processedData;
   } catch (error) {
     console.error('Error loading Excel data:', error);
-    // Return mock data for demonstration
+    console.error('Falling back to mock data generation');
+    // Return mock data only as fallback
     return generateMockData();
   }
 };
