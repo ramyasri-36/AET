@@ -78,13 +78,13 @@ export const StudentEngagementCharts = ({ student }) => {
       {
         label: 'LMS Logins',
         data: lmsData,
-        backgroundColor: 'hsl(214, 67%, 50%)',
+        backgroundColor: 'hsl(220, 60%, 25%)',
         borderRadius: 4,
       },
       {
         label: 'Library Visits',
         data: libraryData,
-        backgroundColor: 'hsl(270, 50%, 50%)',
+        backgroundColor: 'hsl(220, 40%, 45%)',
         borderRadius: 4,
       },
     ],
