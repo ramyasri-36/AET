@@ -20,33 +20,33 @@ code {
 
 @layer base {
     :root {
-        /* Professional Academic Color Palette */
-        --background: 0 0% 100%;
-        --foreground: 215 25% 15%;
+        /* Dark Professional Color Palette */
+        --background: 220 15% 98%;
+        --foreground: 220 20% 10%;
         
         --card: 0 0% 100%;
-        --card-foreground: 215 25% 15%;
+        --card-foreground: 220 20% 10%;
         
         --popover: 0 0% 100%;
-        --popover-foreground: 215 25% 15%;
+        --popover-foreground: 220 20% 10%;
         
-        /* Academic Blue - Primary */
-        --primary: 214 67% 50%;
+        /* Dark Blue - Primary */
+        --primary: 220 60% 25%;
         --primary-foreground: 0 0% 100%;
-        --primary-light: 214 65% 85%;
-        --primary-dark: 214 70% 35%;
+        --primary-light: 220 50% 85%;
+        --primary-dark: 220 70% 15%;
         
-        /* Secondary - Soft Navy */
-        --secondary: 215 20% 92%;
-        --secondary-foreground: 215 25% 15%;
+        /* Secondary - Dark Navy */
+        --secondary: 220 20% 92%;
+        --secondary-foreground: 220 25% 15%;
         
         /* Muted */
-        --muted: 215 20% 96%;
-        --muted-foreground: 215 15% 45%;
+        --muted: 220 15% 94%;
+        --muted-foreground: 220 15% 40%;
         
-        /* Accent - Professional Blue */
-        --accent: 214 65% 92%;
-        --accent-foreground: 214 70% 35%;
+        /* Accent - Dark Blue */
+        --accent: 220 50% 92%;
+        --accent-foreground: 220 60% 25%;
         
         /* Alert System Colors - WCAG Compliant */
         --success: 145 65% 40%;
