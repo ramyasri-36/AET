@@ -24,13 +24,13 @@ export const ImprovementTrendChart = ({ data }) => {
         ],
         backgroundColor: [
           'hsl(145, 65%, 40%)',
-          'hsl(214, 67%, 50%)',
+          'hsl(220, 60%, 25%)',
           'hsl(0, 70%, 45%)',
         ],
         borderColor: [
-          'hsl(145, 55%, 75%)',
-          'hsl(214, 65%, 85%)',
-          'hsl(0, 75%, 75%)',
+          'hsl(220, 20%, 10%)',
+          'hsl(220, 20%, 10%)',
+          'hsl(220, 20%, 10%)',
         ],
         borderWidth: 2,
       },
