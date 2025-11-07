@@ -49,7 +49,7 @@ export const StudentEngagementCharts = ({ student }) => {
       {
         label: 'Assignments Submitted',
         data: assignmentsData,
-        backgroundColor: 'hsl(214, 67%, 50%)',
+        backgroundColor: 'hsl(220, 60%, 25%)',
         borderRadius: 4,
       },
     ],
