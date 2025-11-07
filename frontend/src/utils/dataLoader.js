@@ -37,14 +37,26 @@ export const loadExcelData = async (fileUrl) => {
   if (cachedData) return cachedData;
 
   try {
-    const response = await fetch(fileUrl);
+    const response = await fetch(fileUrl, {
+      mode: 'cors',
+      headers: {
+        'Accept': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch Excel file: ${response.status}`);
+    }
+    
     const arrayBuffer = await response.arrayBuffer();
     const workbook = XLSX.read(arrayBuffer, { type: 'array' });
     const sheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[sheetName];
     const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
-    // Process and enhance data
+    console.log(`Loaded ${jsonData.length} records from Excel file`);
+
+    // Process and enhance data - use ALL records from the file
     const processedData = jsonData.map((row, index) => {
       const activityScore = row.total_activity_score !== undefined
         ? parseFloat(row.total_activity_score)
