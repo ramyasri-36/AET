@@ -32,7 +32,7 @@ const Alerts = () => {
   const loadData = async () => {
     setLoading(true);
     try {
-      const excelData = await loadExcelData('https://customer-assets.emergentagent.com/job_82f7232b-0c6c-492d-ab18-173cf836f765/artifacts/qnll90go_academic_engagement_dataset.xlsx');
+      const excelData = await loadExcelData('https://customer-assets.emergentagent.com/job_engagetracker-1/artifacts/zvyaik44_academic_engagement_dataset.xlsx');
       // Group by student and get latest record
       const studentMap = {};
       excelData.forEach(record => {
