@@ -28,9 +28,9 @@ export const AlertDistributionChart = ({ data }) => {
           'hsl(0, 70%, 45%)',
         ],
         borderColor: [
-          'hsl(145, 55%, 75%)',
-          'hsl(45, 90%, 75%)',
-          'hsl(0, 75%, 75%)',
+          'hsl(220, 20%, 10%)',
+          'hsl(220, 20%, 10%)',
+          'hsl(220, 20%, 10%)',
         ],
         borderWidth: 2,
       },
