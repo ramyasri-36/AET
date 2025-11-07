@@ -62,8 +62,8 @@ export const StudentEngagementCharts = ({ student }) => {
       {
         label: 'Attendance Rate',
         data: attendanceData,
-        borderColor: 'hsl(145, 65%, 40%)',
-        backgroundColor: 'hsl(145, 65%, 40%, 0.1)',
+        borderColor: 'hsl(220, 50%, 35%)',
+        backgroundColor: 'hsl(220, 50%, 35%, 0.1)',
         fill: true,
         tension: 0.4,
         pointRadius: 3,
