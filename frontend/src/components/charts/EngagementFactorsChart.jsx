@@ -42,19 +42,19 @@ export const EngagementFactorsChart = ({ data }) => {
       {
         label: 'Assignments',
         data: avgAssignments,
-        backgroundColor: 'hsl(214, 67%, 50%)',
+        backgroundColor: 'hsl(220, 60%, 25%)',
         stack: 'Stack 0',
       },
       {
         label: 'LMS Logins',
         data: avgLogins,
-        backgroundColor: 'hsl(145, 65%, 40%)',
+        backgroundColor: 'hsl(220, 50%, 35%)',
         stack: 'Stack 0',
       },
       {
         label: 'Attendance %',
         data: avgAttendance,
-        backgroundColor: 'hsl(270, 50%, 50%)',
+        backgroundColor: 'hsl(220, 40%, 45%)',
         stack: 'Stack 0',
       },
     ],
