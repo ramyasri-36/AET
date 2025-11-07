@@ -31,8 +31,8 @@ const Dashboard = () => {
   const loadData = async () => {
     setLoading(true);
     try {
-      // Try to load the uploaded file or use mock data
-      const excelData = await loadExcelData('https://customer-assets.emergentagent.com/job_82f7232b-0c6c-492d-ab18-173cf836f765/artifacts/qnll90go_academic_engagement_dataset.xlsx');
+      // Load the uploaded Excel file with all student data
+      const excelData = await loadExcelData('https://customer-assets.emergentagent.com/job_engagetracker-1/artifacts/zvyaik44_academic_engagement_dataset.xlsx');
       setData(excelData);
       calculateStats(excelData);
       toast.success('Data loaded successfully');
