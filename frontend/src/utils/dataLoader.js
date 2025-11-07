@@ -58,11 +58,21 @@ export const loadExcelData = async (fileUrl) => {
 
     // Process and enhance data - use ALL records from the file
     const processedData = jsonData.map((row, index) => {
-      const activityScore = row.total_activity_score !== undefined
-        ? parseFloat(row.total_activity_score)
-        : calculateActivityScore(row);
+      // Use the activity score from Excel if available, otherwise calculate
+      let activityScore;
+      if (row.total_activity_score !== undefined && row.total_activity_score !== null && row.total_activity_score !== '') {
+        activityScore = parseFloat(row.total_activity_score);
+      } else {
+        activityScore = calculateActivityScore(row);
+      }
       
-      const alertLevel = row.alert_level || getAlertLevel(activityScore);
+      // Use the alert level from Excel if available, otherwise calculate based on score
+      let alertLevel;
+      if (row.alert_level && (row.alert_level === 'Green' || row.alert_level === 'Yellow' || row.alert_level === 'Red')) {
+        alertLevel = row.alert_level;
+      } else {
+        alertLevel = getAlertLevel(activityScore);
+      }
       
       return {
         ...row,
