@@ -274,15 +274,15 @@ const DataSummary = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-[hsl(var(--success))]"></div>
-                  <span className="text-muted-foreground">Green (Low Risk): Activity Score ≥ 70%</span>
+                  <span className="text-muted-foreground">Green (Low Risk): Activity Score &gt;= 70%</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-[hsl(var(--warning))]"></div>
-                  <span className="text-muted-foreground">Yellow (Medium Risk): 40% ≤ Activity Score < 70%</span>
+                  <span className="text-muted-foreground">Yellow (Medium Risk): 40% &lt;= Activity Score &lt; 70%</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-[hsl(var(--danger))]"></div>
-                  <span className="text-muted-foreground">Red (High Risk): Activity Score < 40%</span>
+                  <span className="text-muted-foreground">Red (High Risk): Activity Score &lt; 40%</span>
                 </div>
               </div>
             </div>
