@@ -38,8 +38,8 @@ export const TermComparisonChart = ({ data }) => {
       {
         label: 'Activity Score',
         data: avgScores,
-        borderColor: 'hsl(214, 67%, 50%)',
-        backgroundColor: 'hsl(214, 67%, 50%, 0.1)',
+        borderColor: 'hsl(220, 60%, 25%)',
+        backgroundColor: 'hsl(220, 60%, 25%, 0.1)',
         tension: 0.4,
         pointRadius: 5,
         pointHoverRadius: 7,
@@ -47,8 +47,8 @@ export const TermComparisonChart = ({ data }) => {
       {
         label: 'GPA (scaled)',
         data: avgGPAs,
-        borderColor: 'hsl(145, 65%, 40%)',
-        backgroundColor: 'hsl(145, 65%, 40%, 0.1)',
+        borderColor: 'hsl(220, 50%, 35%)',
+        backgroundColor: 'hsl(220, 50%, 35%, 0.1)',
         tension: 0.4,
         pointRadius: 5,
         pointHoverRadius: 7,
@@ -56,8 +56,8 @@ export const TermComparisonChart = ({ data }) => {
       {
         label: 'Attendance',
         data: avgAttendance,
-        borderColor: 'hsl(270, 50%, 50%)',
-        backgroundColor: 'hsl(270, 50%, 50%, 0.1)',
+        borderColor: 'hsl(220, 40%, 45%)',
+        backgroundColor: 'hsl(220, 40%, 45%, 0.1)',
         tension: 0.4,
         pointRadius: 5,
         pointHoverRadius: 7,
