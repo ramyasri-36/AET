@@ -50,7 +50,7 @@ export const ActivityTrendChart = ({ data }) => {
         tension: 0.4,
         pointRadius: 4,
         pointHoverRadius: 6,
-        pointBackgroundColor: 'hsl(214, 67%, 50%)',
+        pointBackgroundColor: 'hsl(220, 60%, 25%)',
         pointBorderColor: '#fff',
         pointBorderWidth: 2,
       },
