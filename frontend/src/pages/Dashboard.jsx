@@ -32,7 +32,7 @@ const Dashboard = () => {
     setLoading(true);
     try {
       // Load the uploaded Excel file with all student data
-      const excelData = await loadExcelData('https://customer-assets.emergentagent.com/job_engagetracker-1/artifacts/zvyaik44_academic_engagement_dataset.xlsx');
+      const excelData = await loadExcelData('/academic_engagement_dataset.xlsx');
       setData(excelData);
       calculateStats(excelData);
       toast.success('Data loaded successfully');
