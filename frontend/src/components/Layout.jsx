@@ -133,7 +133,7 @@ export const Layout = ({ children }) => {
       <footer className="border-t border-border bg-muted/30 mt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-center text-sm text-muted-foreground">
-            © 2025 Nexus Strategies | Student Risk Prediction System
+            © 2025 Academic Engagement Tracker | Early Risk Dashboard
           </p>
         </div>
       </footer>
