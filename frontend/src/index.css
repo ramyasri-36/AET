@@ -73,25 +73,25 @@ code {
         --ring: 214 67% 50%;
         
         /* Chart Colors */
-        --chart-1: 214 67% 50%;
+        --chart-1: 220 60% 30%;
         --chart-2: 145 65% 40%;
-        --chart-3: 270 50% 50%;
+        --chart-3: 270 50% 45%;
         --chart-4: 38 92% 50%;
         --chart-5: 0 70% 45%;
         
         --radius: 0.5rem;
         
         /* Gradients */
-        --gradient-primary: linear-gradient(135deg, hsl(214 67% 50%) 0%, hsl(214 70% 35%) 100%);
-        --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
-        --gradient-card: linear-gradient(135deg, hsl(214 67% 50% / 0.05) 0%, hsl(214 65% 85% / 0.05) 100%);
+        --gradient-primary: linear-gradient(135deg, hsl(220 60% 25%) 0%, hsl(220 70% 15%) 100%);
+        --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
+        --gradient-card: linear-gradient(135deg, hsl(220 60% 25% / 0.05) 0%, hsl(220 50% 85% / 0.05) 100%);
         
         /* Shadows */
-        --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
-        --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
-        --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
-        --shadow-xl: 0 20px 25px -5px hsl(215 25% 15% / 0.1), 0 10px 10px -5px hsl(215 25% 15% / 0.04);
-        --shadow-card: 0 2px 8px hsl(215 25% 15% / 0.08);
+        --shadow-sm: 0 1px 2px 0 hsl(220 20% 10% / 0.05);
+        --shadow-md: 0 4px 6px -1px hsl(220 20% 10% / 0.1), 0 2px 4px -1px hsl(220 20% 10% / 0.06);
+        --shadow-lg: 0 10px 15px -3px hsl(220 20% 10% / 0.1), 0 4px 6px -2px hsl(220 20% 10% / 0.05);
+        --shadow-xl: 0 20px 25px -5px hsl(220 20% 10% / 0.1), 0 10px 10px -5px hsl(220 20% 10% / 0.04);
+        --shadow-card: 0 2px 8px hsl(220 20% 10% / 0.08);
         
         /* Animations */
         --transition-smooth: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
