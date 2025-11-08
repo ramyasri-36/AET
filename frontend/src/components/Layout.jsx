@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Moon, Sun, Menu, X, GraduationCap, BarChart3, AlertTriangle, Users, Database } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun, Menu, X, GraduationCap, BarChart3, AlertTriangle, Users, Database, LogOut, User as UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
 
 export const Layout = ({ children }) => {
   const [theme, setTheme] = useState('light');
