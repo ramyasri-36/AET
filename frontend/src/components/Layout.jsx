@@ -15,6 +15,10 @@ export const Layout = ({ children }) => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    
+    // Load current user
+    const user = JSON.parse(localStorage.getItem('currentUser') || 'null');
+    setCurrentUser(user);
   }, []);
 
   const toggleTheme = () => {
