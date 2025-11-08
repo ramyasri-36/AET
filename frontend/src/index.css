@@ -21,7 +21,7 @@ code {
 @layer base {
     :root {
         /* Dark Professional Color Palette */
-        --background: 220 20% 98%;
+        --background: 0 0% 96%;
         --foreground: 220 20% 10%;
         
         --card: 0 0% 100%;
