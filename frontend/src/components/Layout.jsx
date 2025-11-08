@@ -153,6 +153,29 @@ export const Layout = ({ children }) => {
                   </Link>
                 );
               })}
+              
+              {/* Mobile user info and logout */}
+              {currentUser && (
+                <>
+                  <div className="border-t border-border pt-2 mt-2">
+                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-muted/50 mb-2">
+                      <UserIcon className="h-4 w-4 text-muted-foreground" />
+                      <span className="text-sm font-medium">{currentUser.name}</span>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      className="w-full justify-start gap-2"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        handleLogout();
+                      }}
+                    >
+                      <LogOut className="h-4 w-4" />
+                      Logout
+                    </Button>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         )}
