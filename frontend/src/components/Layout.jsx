@@ -28,6 +28,13 @@ export const Layout = ({ children }) => {
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('isAuthenticated');
+    localStorage.removeItem('currentUser');
+    toast.success('Logged out successfully');
+    navigate('/login');
+  };
+
   const navigation = [
     { name: 'Dashboard', path: '/', icon: BarChart3 },
     { name: 'Students', path: '/students', icon: Users },
