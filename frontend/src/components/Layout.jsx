@@ -7,7 +7,9 @@ import { toast } from 'sonner';
 export const Layout = ({ children }) => {
   const [theme, setTheme] = useState('light');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'light';
