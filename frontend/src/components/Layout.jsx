@@ -80,6 +80,16 @@ export const Layout = ({ children }) => {
 
             {/* Right side buttons */}
             <div className="flex items-center gap-2">
+              {/* User info - desktop */}
+              {currentUser && (
+                <div className="hidden md:flex items-center gap-2 mr-2">
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted/50">
+                    <UserIcon className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-sm font-medium">{currentUser.name}</span>
+                  </div>
+                </div>
+              )}
+
               <Button
                 variant="ghost"
                 size="icon"
@@ -91,6 +101,16 @@ export const Layout = ({ children }) => {
                 ) : (
                   <Sun className="h-5 w-5" />
                 )}
+              </Button>
+
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleLogout}
+                className="rounded-lg hidden md:flex"
+                title="Logout"
+              >
+                <LogOut className="h-5 w-5" />
               </Button>
 
               {/* Mobile menu button */}
