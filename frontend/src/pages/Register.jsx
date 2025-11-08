@@ -62,9 +62,11 @@ const Register = () => {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-lg">
-              <GraduationCap className="h-10 w-10" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Logo" 
+              className="h-16 w-16 object-contain"
+            />
             <div>
               <h1 className="text-2xl font-bold text-foreground">Academic Engagement</h1>
               <p className="text-sm text-muted-foreground">Early Risk Dashboard</p>
