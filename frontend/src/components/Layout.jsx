@@ -50,9 +50,11 @@ export const Layout = ({ children }) => {
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-md group-hover:shadow-lg transition-all">
-                <GraduationCap className="h-6 w-6" />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="Logo" 
+                className="h-10 w-10 object-contain group-hover:scale-105 transition-transform"
+              />
               <div className="hidden sm:block">
                 <h1 className="text-lg font-bold text-foreground">Academic Engagement</h1>
                 <p className="text-xs text-muted-foreground">Early Risk Dashboard</p>
