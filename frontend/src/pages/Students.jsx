@@ -21,9 +21,9 @@ const Students = () => {
     if (searchTerm) {
       const filtered = data.filter(
         (student) =>
-          student.student_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          student.student_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          student.department.toLowerCase().includes(searchTerm.toLowerCase())
+          student.student_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          String(student.student_id).toLowerCase().includes(searchTerm.toLowerCase()) ||
+          student.department?.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredData(filtered);
     } else {
