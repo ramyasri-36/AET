@@ -62,8 +62,8 @@ const Alerts = () => {
     if (searchTerm) {
       filtered = filtered.filter(
         (s) =>
-          s.student_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          s.student_id.toLowerCase().includes(searchTerm.toLowerCase())
+          s.student_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          String(s.student_id).toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
