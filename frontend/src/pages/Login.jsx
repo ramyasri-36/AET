@@ -29,10 +29,17 @@ const Login = () => {
       const user = users.find(u => u.email === email && u.password === password);
 
       if (user) {
+        // Set authentication first
         localStorage.setItem('isAuthenticated', 'true');
         localStorage.setItem('currentUser', JSON.stringify({ email: user.email, name: user.name }));
+        
+        // Show success message
         toast.success('Login successful!');
-        navigate('/');
+        
+        // Small delay to ensure localStorage is written
+        setTimeout(() => {
+          navigate('/');
+        }, 100);
       } else {
         toast.error('Invalid email or password');
       }
