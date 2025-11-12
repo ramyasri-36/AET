@@ -35,14 +35,19 @@ const Students = () => {
     setLoading(true);
     try {
       const excelData = await loadExcelData('/academic_engagement_dataset.xlsx');
-      // Group by student and get latest record for each
-      const studentMap = {};
+      
+      // Group by student and get latest record for each - optimized
+      const studentMap = new Map();
       excelData.forEach(record => {
-        if (!studentMap[record.student_id] || record.week_number > studentMap[record.student_id].week_number) {
-          studentMap[record.student_id] = record;
+        const existingRecord = studentMap.get(record.student_id);
+        if (!existingRecord || record.week_number > existingRecord.week_number) {
+          studentMap.set(record.student_id, record);
         }
       });
-      const students = Object.values(studentMap);
+      
+      const students = Array.from(studentMap.values());
+      console.log(`Loaded ${students.length} unique students`);
+      
       setData(students);
       setFilteredData(students);
     } catch (error) {
